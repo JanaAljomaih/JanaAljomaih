@@ -1,0 +1,5 @@
+package linkedlistphonebook;
+
+public interface Comparable<T> {
+    public int CompareTo(String Contact_Name);
+}
