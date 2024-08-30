@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myReservations">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="390dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/jeddahToMeccaNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Jeddah to Mecca" />
+
+            <Button
+                android:id="@+id/Edit1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Edit" />
+
+            <Button
+                android:id="@+id/Delete1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="#6750A3"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="DuplicateIds">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Reservations"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="12dp">
+
+        </TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="390dp"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.205">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/MeccatoJeddahNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mecca to Jeddah" />
+
+            <Button
+                android:id="@+id/Edit2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit" />
+
+            <Button
+                android:id="@+id/Delete2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="351dp"
+        android:layout_height="243dp"
+        android:layout_marginBottom="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/jeddahtoMadina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jeddah to Madina" />
+
+            <Button
+                android:id="@+id/AlsulaimaniyahtoAIRPORT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alsulaimaniyah -Jeddah to AIRPORT -Jeddah" />
+
+            <Button
+                android:id="@+id/KAECtoMadinah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KAEC to Madinah" />
+
+            <Button
+                android:id="@+id/MadinahtoKAEC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Madinah to KAEC " />
+
+            <Button
+                android:id="@+id/MeccatoJeddah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mecca to Jeddah" />
+
+            <Button
+                android:id="@+id/JeddahtoMecca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jeddah to Mecca" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#D8C3FF"
+        android:text="Previous Reservations"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="164dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="36dp"
+        android:background="#D8C3FF"
+        android:text="Currrent Reservations"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="150dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_nav_menu">
+
+            <TextView
+                android:id="@+id/firstFragment"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="40sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/secondFragment"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:textSize="40sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/thirdFragment"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="290dp"
+                android:textSize="40sp"
+                android:textStyle="italic|bold" />
+
+            <Button
+                android:id="@+id/firstNav"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="0dp"
+                android:background="#00000000"
+                android:textSize="35dp"
+
+                />
+
+            <Button
+                android:id="@+id/secondNavg"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="0dp"
+                android:background="#0000"
+                android:textSize="35dp"
+                />
+
+
+            <Button
+                android:id="@+id/thirddNav"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="290dp"
+                android:layout_marginTop="0dp"
+                android:background="#0000"
+                android:textSize="35dp"
+                />
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
